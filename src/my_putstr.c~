@@ -7,11 +7,11 @@
 
 #include "../include/infinitadd.h"
 
-int  my_putstr(char const *str)
+int  my_putstr(char const *str, int len)
 {
     char counter = 0;
 
-    while(str[counter] !=  '\0')
+    while(str[counter] <  len)
     {
         my_putchar(str[counter]);
         counter++;
